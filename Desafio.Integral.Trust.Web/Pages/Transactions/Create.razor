@@ -1,0 +1,35 @@
+﻿@page "/transactions/adicionar"
+@inherits CreateTransactionPage
+
+<MudText Typo="Typo.h3">Nova Categoria</MudText>
+<MudPaper Class="pa-8 mt-4">
+    <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+
+        <MudTextField Label="Código Moeda"
+                      HelperText="Campo obrigatório"
+                      @bind-Value="InputModel.CodigoMoeda"
+                      For="@(() => InputModel.CodigoMoeda)" />
+
+        <MudTextField Label="Valor"
+                      HelperText="Campo obrigatório"
+                      @bind-Value="InputModel.Valor"
+                      For="@(() => InputModel.Valor)" />
+
+        <MudTextField Label="Descição"
+                      Lines="5"
+                      HelperText="Campo obrigatório"
+                      @bind-Value="InputModel.Descricao"
+                      For="@(() => InputModel.Descricao)" />
+
+        
+        @* public ETipoTransacao TipoTransacao { get; set; } *@
+
+
+        <MudButton ButtonType="ButtonType.Submit"
+                   Variant="Variant.Filled"
+                   Color="Color.Primary">
+            Salvar
+        </MudButton>
+    </EditForm>
+</MudPaper>
