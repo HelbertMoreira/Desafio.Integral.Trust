@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.Integral.Trust.Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.Integral.Trust.Domain", "Desafio.Integral.Trust.Domain\Desafio.Integral.Trust.Domain.csproj", "{10C090D3-AB41-42F1-83D4-FC013A002AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Integral.Trust.Web", "Desafio.Integral.Trust.Web\Desafio.Integral.Trust.Web.csproj", "{670E986C-55A3-4E7D-9425-B8622FCF1C2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.Integral.Trust.Web", "Desafio.Integral.Trust.Web\Desafio.Integral.Trust.Web.csproj", "{670E986C-55A3-4E7D-9425-B8622FCF1C2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{79403188-167D-4424-88F0-55C69AE3EF8A}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
